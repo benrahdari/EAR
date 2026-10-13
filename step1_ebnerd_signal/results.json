@@ -1,0 +1,163 @@
+{
+ "history_reads": 2463153,
+ "scroll_missing": 0.07088841009876366,
+ "scroll_eq_100": 0.40342069018555027,
+ "scroll_lt_50": 0.35761034089796834,
+ "spearman_scroll_readtime": 0.5192187127472306,
+ "spearman_scroll_impliedfrac": 0.5699869458910634,
+ "by_length": [
+  {
+   "len_bin": "(0.999, 201.0]",
+   "median_scroll": "98.0",
+   "share_100": "0.489",
+   "median_rt": "14.0",
+   "median_frac_rt": "0.394"
+  },
+  {
+   "len_bin": "(201.0, 257.0]",
+   "median_scroll": "81.0",
+   "share_100": "0.42",
+   "median_rt": "17.0",
+   "median_frac_rt": "0.279"
+  },
+  {
+   "len_bin": "(257.0, 307.0]",
+   "median_scroll": "69.0",
+   "share_100": "0.385",
+   "median_rt": "17.0",
+   "median_frac_rt": "0.234"
+  },
+  {
+   "len_bin": "(307.0, 420.0]",
+   "median_scroll": "65.0",
+   "share_100": "0.362",
+   "median_rt": "19.0",
+   "median_frac_rt": "0.201"
+  },
+  {
+   "len_bin": "(420.0, 4478.0]",
+   "median_scroll": "65.0",
+   "share_100": "0.36",
+   "median_rt": "22.0",
+   "median_frac_rt": "0.135"
+  }
+ ],
+ "by_images": [
+  {
+   "img_bin": "0",
+   "median_scroll": "100.0",
+   "share_100": "0.504",
+   "n": "270251"
+  },
+  {
+   "img_bin": "1",
+   "median_scroll": "76.0",
+   "share_100": "0.403",
+   "n": "948846"
+  },
+  {
+   "img_bin": "2-3",
+   "median_scroll": "68.0",
+   "share_100": "0.375",
+   "n": "782787"
+  },
+  {
+   "img_bin": "4+",
+   "median_scroll": "68.0",
+   "share_100": "0.388",
+   "n": "286660"
+  }
+ ],
+ "long_articles_scroll100_under10s": 0.04873862452329503,
+ "long_articles_scroll_lt50_over60s": 0.03133343941034867,
+ "user_share_of_scroll_variance": 0.15764644124872362,
+ "sessions_followup_impressions": 117138,
+ "delta_partial_vs_placebo": [
+  {
+   "bin": "5-25",
+   "full": "False",
+   "mean": "-0.000978",
+   "sem": "0.000122",
+   "rank": "0.472166",
+   "n": "22525"
+  },
+  {
+   "bin": "5-25",
+   "full": "True",
+   "mean": "-0.000574",
+   "sem": "0.000106",
+   "rank": "0.480129",
+   "n": "32652"
+  },
+  {
+   "bin": "25-50",
+   "full": "False",
+   "mean": "-0.000619",
+   "sem": "9.3e-05",
+   "rank": "0.481556",
+   "n": "31198"
+  },
+  {
+   "bin": "25-50",
+   "full": "True",
+   "mean": "-0.00072",
+   "sem": "9.3e-05",
+   "rank": "0.482373",
+   "n": "32652"
+  },
+  {
+   "bin": "50-75",
+   "full": "False",
+   "mean": "-0.000281",
+   "sem": "0.000126",
+   "rank": "0.491323",
+   "n": "16883"
+  },
+  {
+   "bin": "50-75",
+   "full": "True",
+   "mean": "-0.000241",
+   "sem": "9.4e-05",
+   "rank": "0.497181",
+   "n": "32652"
+  },
+  {
+   "bin": "75-99",
+   "full": "False",
+   "mean": "0.000389",
+   "sem": "0.000179",
+   "rank": "0.515629",
+   "n": "13060"
+  },
+  {
+   "bin": "75-99",
+   "full": "True",
+   "mean": "6.6e-05",
+   "sem": "0.000106",
+   "rank": "0.511715",
+   "n": "32652"
+  }
+ ],
+ "did_partial_minus_placebo": {
+  "5-25": {
+   "diff": -0.0004043803786824197,
+   "se": 0.00016150086338216272,
+   "mannwhitney_p": 0.002136689511072251
+  },
+  "25-50": {
+   "diff": 0.00010152356264444412,
+   "se": 0.00013219144742934987,
+   "mannwhitney_p": 0.8095445800372967
+  },
+  "50-75": {
+   "diff": -4.0700134288183505e-05,
+   "se": 0.00015692884405880717,
+   "mannwhitney_p": 0.029300290897248206
+  },
+  "75-99": {
+   "diff": 0.0003228930791840387,
+   "se": 0.0002077814146799005,
+   "mannwhitney_p": 0.6516073421727389
+  }
+ }
+}

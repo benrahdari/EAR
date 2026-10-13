@@ -1,0 +1,82 @@
+{
+ "users": 974791,
+ "history_reads": 131918897,
+ "reads_with_scroll": 117976791,
+ "scroll_missing": 0.07006506986395158,
+ "scroll_eq_100": 0.4018862065844798,
+ "scroll_lt_50": 0.3581823818211838,
+ "user_share_of_scroll_variance": 0.15687417419642607,
+ "sample_reads_for_medians": 2358424,
+ "spearman_scroll_readtime": 0.5225668201976721,
+ "spearman_scroll_impliedfrac": 0.5739967144600971,
+ "by_length": [
+  {
+   "len_bin": "(0.999, 201.0]",
+   "median_scroll": "97.0",
+   "share_100": "0.488",
+   "median_rt": "14.0",
+   "median_frac_rt": "0.393",
+   "n": "472884"
+  },
+  {
+   "len_bin": "(201.0, 257.0]",
+   "median_scroll": "80.0",
+   "share_100": "0.417",
+   "median_rt": "17.0",
+   "median_frac_rt": "0.279",
+   "n": "475770"
+  },
+  {
+   "len_bin": "(257.0, 306.0]",
+   "median_scroll": "70.0",
+   "share_100": "0.384",
+   "median_rt": "17.0",
+   "median_frac_rt": "0.232",
+   "n": "466737"
+  },
+  {
+   "len_bin": "(306.0, 420.0]",
+   "median_scroll": "65.0",
+   "share_100": "0.363",
+   "median_rt": "19.0",
+   "median_frac_rt": "0.201",
+   "n": "474099"
+  },
+  {
+   "len_bin": "(420.0, 9178.0]",
+   "median_scroll": "64.0",
+   "share_100": "0.357",
+   "median_rt": "22.0",
+   "median_frac_rt": "0.135",
+   "n": "468934"
+  }
+ ],
+ "by_images": [
+  {
+   "img_bin": "0",
+   "median_scroll": "100.0",
+   "share_100": "0.502",
+   "n": "280245"
+  },
+  {
+   "img_bin": "1",
+   "median_scroll": "76.0",
+   "share_100": "0.401",
+   "n": "977452"
+  },
+  {
+   "img_bin": "2-3",
+   "median_scroll": "68.0",
+   "share_100": "0.373",
+   "n": "806429"
+  },
+  {
+   "img_bin": "4+",
+   "median_scroll": "68.0",
+   "share_100": "0.386",
+   "n": "294298"
+  }
+ ],
+ "long_articles_scroll100_under10s": 0.048264446327965296,
+ "long_articles_scroll_lt50_over60s": 0.030626713865483372
+}

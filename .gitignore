@@ -1,0 +1,5 @@
+data/*
+!data/download_ebnerd.sh
+*.parquet
+*.npz
+__pycache__/
