@@ -1,9 +1,9 @@
-"""Step 3: offline re-ranking eval, whole-item vs partial exposure x category vs semantic units.
+"""Offline re-ranking evaluation: whole-item vs partial-exposure user profiles x category vs semantic units.
 
 Each impression in the split is re-ranked by a profile built from the user's history (the 3 weeks before),
 using one relevance model for every arm: score = <profile, candidate>. Metrics per impression: AUC, MRR, nDCG@5.
 
-usage: python eval.py DATA_DIR SPLIT OUT_DIR [EMB.npz]     (no EMB -> category arms only)
+usage: python rerank_eval.py DATA_DIR SPLIT OUT_DIR [EMB.npz]     (no EMB -> category arms only)
 """
 import sys, os, json
 import numpy as np, pandas as pd

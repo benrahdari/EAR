@@ -1,7 +1,7 @@
-"""Step 1b: rerun the 'next click leans toward the unread part' test with dense embeddings
-(intfloat/multilingual-e5-base) instead of TF-IDF. Same design as step1_ebnerd_signal/step1.py, part B.
+"""Tests whether the next click leans toward the unread part of the previous article, using dense embeddings
+(intfloat/multilingual-e5-base). Same design as the TF-IDF test in ../01_exposure_signal/exposure_signal.py.
 
-usage: python step1b.py DATA_DIR OUT_DIR [model]
+usage: python unread_content_test.py DATA_DIR OUT_DIR [model]
 """
 import sys, json, os
 import numpy as np, pandas as pd
@@ -21,7 +21,7 @@ arts["n_words"] = arts.body.fillna("").str.split().str.len()
 arts["n_paras"] = arts.paras.str.len()
 A = arts.set_index("article_id")
 
-# ---------- follow-up impressions (identical selection to step 1) ----------
+# ---------- follow-up impressions (identical selection to exposure_signal.py) ----------
 b = pd.concat([pd.read_parquet(f"{D}/{s_}/behaviors.parquet") for s_ in ("train", "validation")]).sort_values(["user_id", "impression_time"])
 b["clk"] = b.article_ids_clicked.str[0]
 g = b.groupby("user_id")
@@ -57,7 +57,7 @@ for j, (a, i) in enumerate(pkeys):
 R["n_candidate_articles"], R["n_paragraphs"] = len(cand_ids), len(pkeys)
 
 def part_vecs(a, paras, frac):
-    """word-weighted mean of paragraph embeddings for seen / unseen parts (split as in step 1)"""
+    """word-weighted mean of paragraph embeddings for seen / unseen parts (split as in exposure_signal.py)"""
     w = np.array([len(p.split()) for p in paras], float); cw = np.cumsum(w) / w.sum()
     k = max(1, min(len(paras) - 1, int(np.searchsorted(cw, frac, side="right"))))
     E = PE[pidx[a]]

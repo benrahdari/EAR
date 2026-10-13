@@ -1,5 +1,5 @@
-"""Category arms of the step-3 re-ranking eval, vectorized so it runs on full EB-NeRD (12.6M impressions).
-Same profiles, exposure estimates and metrics as eval.py. usage: python eval_category_full.py DATA_DIR SPLIT OUT_DIR"""
+"""Category arms of the re-ranking evaluation, vectorized so it runs on EB-NeRD large (12.6M impressions).
+Same profiles, exposure estimates and metrics as rerank_eval.py. usage: python rerank_eval_category_large.py DATA_DIR SPLIT OUT_DIR"""
 import sys, os, json
 import numpy as np, pandas as pd, pyarrow.parquet as pq, pyarrow.compute as pc
 

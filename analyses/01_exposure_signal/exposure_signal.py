@@ -1,4 +1,8 @@
-"""Step 1: is there enough signal in EB-NeRD scroll % / read time to infer partial exposure?"""
+"""Within-article exposure signal in EB-NeRD: scroll percentage and read time, and a TF-IDF test of whether the
+next click relates to the unread part of the previous article.
+
+usage: python exposure_signal.py DATA_DIR OUT_DIR
+"""
 import sys, json
 import numpy as np, pandas as pd
 import matplotlib; matplotlib.use("Agg")

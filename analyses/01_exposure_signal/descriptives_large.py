@@ -1,4 +1,7 @@
-"""Step 1 descriptive analysis on full EB-NeRD, memory-efficient (pyarrow flatten instead of pandas explode)."""
+"""Exposure-signal descriptives on EB-NeRD large, memory-efficient (pyarrow flatten instead of pandas explode).
+
+usage: python descriptives_large.py DATA_DIR OUT_DIR
+"""
 import sys, json
 import numpy as np, pandas as pd, pyarrow.parquet as pq, pyarrow.compute as pc
 import matplotlib; matplotlib.use("Agg")
